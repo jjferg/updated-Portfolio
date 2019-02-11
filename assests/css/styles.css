@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+   
+  } 
+
+  body {
+      height: 1200px
+  }
+
+#name {
+    color: white;
+    padding: 0% 0% 0% 0%;
+    width: 100%;
+    box-shadow: 5px 10px black;
+    background: #4aaaa5;
+}
+
+hr {
+    border-width: 2px;
+    height: 3px;
+    background-color: #cccccc;
+}
+
+.stuff {
+    margin-top: 55px;
+    border: solid 1px #cccccc;
+    height: 600px;
+    width: 60%;
+    overflow: auto;
+}
+
+#pic {
+    width: 200px;
+    float: left;
+    padding: 15px;
+    margin: 0%;
+}
+
+#about {
+    width: 50%;  
+}
+
+
+
+#social {
+    width: 75px;
+}
+
+.git {
+    width: 90px;
+    height: 75px;
+}
+
+button:hover{
+    background-color: black;
+
+}
+
+.soc {
+    border: solid black;
+    height: 275px;
+    margin-left: 115px;
+    margin-top: 55px;
+    box-shadow: 5px 10px black;
+    overflow: auto;
+}
+
+h3{
+    text-align: center;
+}
+
+#giph{
+    background-color: black;
+    width: 400px;
+
+}
