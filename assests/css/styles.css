@@ -3,17 +3,41 @@
    
   } 
 
+  #text {
+      font-size: 20px;
+  }
+ 
+  .rainbow {
+    background-image: linear-gradient(to left, rgb(230, 47, 230), indigo, blue,
+    #d018e9ed, #181510, red);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
   body {
-      height: 1200px
+      background-color: whitesmoke;
+      background-size: auto;
+      height: 1200px;
+      background-repeat: no-repeat;
   }
 
 #name {
-    color: white;
     padding: 0% 0% 0% 0%;
     width: 100%;
     box-shadow: 5px 10px black;
-    background: #4aaaa5;
+    background: royalblue;
 }
+
+#spot {
+    background-image: 
+    url("https://image.freepik.com/free-vector/brick-wall-realistic_1284-4683.jpg");
+    background-repeat: no-repeat;
+    background-size: 110% 100%;
+    box-shadow: 5px 10px black;
+    border: solid black;
+
+}
+
 
 hr {
     border-width: 2px;
