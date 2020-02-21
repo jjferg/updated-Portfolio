@@ -7,31 +7,29 @@
       font-size: 20px;
   }
  
-  .rainbow {
-    background-image: linear-gradient(to left, rgb(230, 47, 230), indigo, blue,
-    #d018e9ed, #181510, red);
-    -webkit-background-clip: text;
-    color: transparent;
-  }
+  
 
   body {
-      background-color: whitesmoke;
-      background-size: auto;
+      background-color: whitesmoke; 
       height: 1200px;
-      background-repeat: no-repeat;
+
   }
 
 #name {
+    height: 90px;
     padding: 0% 0% 0% 0%;
     width: 100%;
     box-shadow: 5px 10px black;
     background: royalblue;
 }
-
+#title{
+    text-align: center;
+}
+#bg{
+    background-color: gainsboro;
+}
 #spot {
-    background-image: 
-    url("https://image.freepik.com/free-vector/brick-wall-realistic_1284-4683.jpg");
-    background-repeat: no-repeat;
+    background-color: gainsboro;
     background-size: 110% 100%;
     box-shadow: 5px 10px black;
     border: solid black;
@@ -67,6 +65,7 @@ hr {
 
 
 #social {
+    background-size: auto;
     width: 75px;
 }
 
@@ -93,7 +92,10 @@ h3{
     text-align: center;
 }
 
-#giph{
+#trivia {
+    height: 250px;
+}
+.giph{
     background-color: black;
     width: 400px;
 
