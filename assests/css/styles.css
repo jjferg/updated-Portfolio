@@ -33,10 +33,12 @@ html {
     text-align: center;
 }
 #bg{
+    padding: 15px;
     font-size: 15px;
     background-color: gainsboro;
 }
 #spot {
+    padding: 10px;
     width: 600px;
     background-color: gainsboro;
     background-size: 100%;
