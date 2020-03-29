@@ -2,16 +2,21 @@
     box-sizing: border-box;
    
   } 
-
+html {
+    height: 2000px;
+}
   #text {
       font-size: 20px;
   }
  
+  .contact {
+      font-size: 14px;
+  }
   
 
   body {
       background-color: whitesmoke; 
-      height: 1200px;
+      height: 1400px;
 
   }
 
@@ -23,14 +28,18 @@
     background: royalblue;
 }
 #title{
+    margin-top: 10px;
+    font-size: 40px;
     text-align: center;
 }
 #bg{
+    font-size: 15px;
     background-color: gainsboro;
 }
 #spot {
+    width: 600px;
     background-color: gainsboro;
-    background-size: 110% 100%;
+    background-size: 100%;
     box-shadow: 5px 10px black;
     border: solid black;
 
@@ -62,6 +71,9 @@ hr {
     width: 50%;  
 }
 
+.me {
+    margin-top: 10px;
+}
 
 
 #social {
@@ -76,8 +88,12 @@ hr {
 
 button:hover{
     background-color: black;
-
 }
+
+/* button {
+    position: relative;
+} */
+
 
 .soc {
     border: solid black;
@@ -98,5 +114,14 @@ h3{
 .giph{
     background-color: black;
     width: 400px;
+}
 
+h4 {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 150px;
+}
+
+#rows {
+    margin-top: 75px;
 }
