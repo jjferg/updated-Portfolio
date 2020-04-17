@@ -121,9 +121,16 @@ h3{
 h4 {
     position: absolute;
     margin-top: 110px;
-    margin-left: 150px;
+    margin-left: 50px;
 }
 
 #rows {
     margin-top: 75px;
+}
+
+#bottom {
+    margin-top: 20px;
+    position: relative;
+    left: 25%;
+    align-content: center;
 }
