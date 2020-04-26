@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 2000px;
+  }
+  #text {
+    font-size: 20px;
+  }
+  .contact {
+    font-size: 14px;
+  }
+  body {
+    background-color: whitesmoke;
+    height: 1400px;
+  }
+  #name {
+    height: 90px;
+    padding: 0% 0% 0% 0%;
+    width: 100%;
+    box-shadow: 5px 10px black;
+    background: royalblue;
+  }
+  #title {
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
+  }
+  #bg {
+    padding: 15px;
+    font-size: 15px;
+    background-color: gainsboro;
+  }
+  #spot {
+    padding: 10px;
+    width: 600px;
+    background-color: gainsboro;
+    background-size: 100%;
+    box-shadow: 5px 10px black;
+    border: solid black;
+  }
+  hr {
+    border-width: 2px;
+    height: 3px;
+    background-color: #cccccc;
+  }
+  .stuff {
+    margin-top: 55px;
+    border: solid 1px #cccccc;
+    height: 600px;
+    width: 60%;
+    overflow: auto;
+  }
+  #pic {
+    width: 200px;
+    float: left;
+    padding: 15px;
+    margin: 0%;
+  }
+  #about {
+    width: 50%;
+  }
+  #me {
+    margin-top: 10px;
+  }
+  #social {
+    background-size: auto;
+    width: 75px;
+  }
+  .git {
+    width: 90px;
+    height: 75px;
+  }
+  .soc {
+    border: solid black;
+    height: 275px;
+    margin-left: 115px;
+    margin-top: 55px;
+    box-shadow: 5px 10px black;
+    overflow: auto;
+  }
+  /* .project-bts {
+    border: solid whitesmoke;
+  } */
+  #bottom:hover .overlay{
+   opacity: 1;
+  }
+  h3 {
+    text-align: center;
+  }
+  #trivia {
+    height: 250px;
+  }
+  .giph {
+    display: block;
+    width: 400px;
+  }
+  /* #rows {
+    margin-top: 75px;
+  } */
+  
+  .overlay {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 6px;
+    right: 0px;
+    height: 89%;
+    width: 97%;
+    opacity: 0;
+    transition: .2s ease;
+    background-color: royalblue;
+  }
+  #bottom {
+    margin-top: 20px;
+    position: relative;
+    
+    align-content: center;
+    border: solid whitesmoke;
+  }
+  .text {
+    color: white;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+  }
+  a {
+    margin-top: 10px;
+  }
+  #simpson {
+    right: 10px;
+  }
+  @media screen and (max-width: 380px) {
+    #spot {
+      overflow: hidden;
+      height: 545px;
+      padding: 10px;
+      width: 510px;
+      background-color: gainsboro;
+      background-size: 100%;
+      box-shadow: 5px 10px black;
+      border: solid black;
+  }
+    #name {
+      height: 90px;
+      padding: 0% 0% 0% 0%;
+      width: 108%;
+      box-shadow: 5px 10px black;
+      background: royalblue;
+    }
+    #me  {
+        position: relative;
+        margin-top: 10px;
+        left: 85px;
+    }
+    #bg {
+      padding: 10px;
+      font-size: 10px;
+      background-color: gainsboro;
+      overflow: hidden;
+  }
+  }
+  @media screen and (min-width: 990px) {
+    #me {
+      position: relative;
+      margin-top: 10px;
+      left: 140px;
+    }
+    #spot {
+      height: 545px;
+      padding: 10px;
+      width: 510px;
+      background-color: gainsboro;
+      background-size: 100%;
+      box-shadow: 5px 10px black;
+      border: solid black;
+  }
+    .soc {
+      border: solid black;
+      height: 275px;
+      margin-left: 0;
+      margin-right: 25px;
+      margin-top: 50px;
+      box-shadow: 5px 10px black;
+      overflow: auto;
+    }
+        #bottom{
+          position: relative;
+          margin-top: 0px;
+          left: 45px;
+        }
+        .overlay {
+          position: absolute;
+          top: 30px;
+          bottom: 0;
+          left: 20px;
+          right: 0px;
+          height: 89%;
+          width: 75%;
+          opacity: 0;
+          transition: .2s ease;
+          background-color: royalblue;
+        }
+  }

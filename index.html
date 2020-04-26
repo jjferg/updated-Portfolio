@@ -5,46 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Porfolio</title>
-    <link rel="stylesheet" href="assests/css/reset.css" />
+    <!--  -->
     <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet" 
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assests/css/styles.css" />
+      crossorigin="anonymous" />  
+      <!-- css link -->
+    <link rel="stylesheet" href="assests/css/styles.css" />  
   </head>
-
+  <!--  -->
   <body alt="">
     <div class="container">
       <div id="name" class="row">
-        <div class="col-md-12">
+        <div class="col-12"> 
           <h1>
             <p id="title">Jamaal J Ferguson</p>
           </h1>
         </div>
       </div>
       <div class="row">
-        <div id="spot" class="col-md-6 stuff">
+        <!--  -->
+        <div id="spot" class="col- stuff">
           <h2 id="me">About Me</h2>
           <hr />
           <br />
           <img id="pic" src="assests/images/IMG_0259.jpg" alt="headshot" />
           <span id="about">
             <p id="text">
-              Full Stack Web Developer. One Who enjoys the journey, passion anf
-              tenacity required to be effetive in this field and any endouver.
-              The opportunity to create and build is a reward with in itself.
-              Skilled with HTML5, CSS3, Javascript, JQuery, Mongo, MySQL,
-              MongoDB, Firebase, Greensoc Animation, Reactjs, NodeJs Express.
-              This knowledge allows me to build "Full Stack" interactive
-              websites and applications.
+                “Full Stack Web Developer who enjoys the journey, passion, and tenacity required to be effective in this field and any endeavor. The opportunity to create and build is a reward within itself. Skilled with HTML5, CSS3, JavaScript, jQuery, MySQL, MongoDB, Firebase, Greensoc Animation, Reactjs, NodeJs Express. This knowledge allows me to build "Full Stack" interactive websites and applications.” 
             </p>
           </span>
         </div>
-        <div id="bg" class="col-md-3 soc">
+      <!--  -->
+        <div id="bg" class="col- soc">
           <h3>Lets Connenct</h3>
           <hr />
+      <!--  -->
           <button>
             <a href="https://www.linkedin.com/in/jamaal-ferguson-a8059217a/">
               <img id="social" src="assests/images/linkdin.svg" />
@@ -66,38 +63,39 @@
       <h3><u> Coding Portfolio</u></h3>
       <br />
       <br />
-
+      <!--  -->
       <div class="row">
         <div class="col">
+            <button  type="button" class="btn btn-primary"><a> App Buid Info</a></button>
             <button id="bottom">
               <a href="https://github.com/jjferg/Giphy-App">
-                press this link view code</a>
+              Press This >>Link<< to view code</a>
               <a href="https://jjferg.github.io/Giphy-App/">
               <img class="giph" src="assests/images/giphyapp_thumb.png" />
-              <div class="overlay">
+              <div id="overlay" class="overlay">
                 <div class="text">
                   A wonderful visual alternative to your normal giphy apps. This
                   app has predetermined buttons created through HTML5 and styled
                   with CSS3. The giph's are paused by default.You can search/add any of your likings
                   via the search bar and Jquery will dynamically create a button
-                  reflecting choice:<span style="color:black"><br>(CLick This for Live Demo!!)</span>
+                  reflecting choice:<span style="color:black"><br>(>>CLick This for Live github!<<)</span>
                 </div>
-              </div>
+              </div>   
             </button>
         </div>
         <div class="col">
             <button id="bottom">
-                <a href="https://github.com/jjferg/TriviaGame"></a>
-                  Press this link view code</a>
+                <a href="https://github.com/jjferg/TriviaGame">
+                  Press This >>Link<< to view code</a>
                <a href="https://jjferg.github.io/TriviaGame/">
               <img id="trivia" class="giph" src="assests/images/Trivia_thumb.png"/>
-              <div class="overlay">
+              <div id="overlay" class="overlay">
                 <div class="text">
                   This is a "Nintendo" themed multiple choice Trivia Game.
                   Utilizing the HTML5 format, we can store the users' input and
                   later let javascript compute the outcome. CSS3 dresses it up
                   real nice for a visually satisfying layout.
-                  <span style="color:black"><br>(CLick This for Live Demo!!)</span>
+                  <span style="color:black"><br>(>>CLick This for Live github!<<)</span>
                 </div>
               </div>
             </button>
@@ -107,22 +105,41 @@
           <div class="col">
               <button id="bottom" class="over">
                   <a href="https://github.com/jjferg/Clicky-Game">
-                    press this link view code</a>
-                <a href="https://jjferg.github.io/Clicky-Game/">
+                    Press This >>Link<< to view code</a>
+                <a href="https://jjferg.github.io/Clicky-Game/"></a>
                 <img class="giph" id="simpson" src="assests/images/clicky copy.png" />
-                <div class="overlay"> 
-                  <div class="text">
+                <div id="overlay" class="overlay" > 
+                  <div  class="text">
                     A "Simpsons" themed memory game. React is used here to
                     dynamically rearrange the images as the user clicks an
                     image, all while updating the score and checking to see if
                     the user won. React does this without reloading the page,
                     maintaining stability, clean concise code that ensures
-                    faster rendering.<span style="color:black"><br>(CLick This for Live Demo!!)</span>
+                    faster rendering.<span style="color:black"><br>(>>CLick This for Live github!<<)</span>
                   </div>
                 </div>
               </button>
           </div>
         </div>
     </div>
+    <script>
+      // function for mobie to show overlay for apps
+      function on() {
+        var x, i;
+        x = document.querySelectorAll('.overlay');
+        for( i = 0; i < x.length; i++) {
+           var onOff = x[i].style.display;
+        
+        if(onOff == 'block') {
+          x[i].style.display = 'none'
+        }else{
+          x[i].style.display  = 'block'
+        }
+        }
+       console.log("fired")
+      }
+
+      document.querySelector(".btn").onclick = on;
+    </script>
   </body>
 </html>

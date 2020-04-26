@@ -6,7 +6,7 @@ html {
   height: 2000px;
 }
 #text {
-  font-size: 20px;
+  font-size: 23px;
 }
 .contact {
   font-size: 14px;
@@ -28,9 +28,17 @@ body {
   text-align: center;
 }
 #bg {
-  padding: 15px;
+  position: relative;
+  left: 50px;
+  margin-top: 55px;
+  border: solid black;
+  height: 280px;
+  padding: 17px;
+  padding-top: 23px;
   font-size: 15px;
   background-color: gainsboro;
+  box-shadow: 5px 10px black;
+  overflow: auto;
 }
 #spot {
   padding: 10px;
@@ -61,7 +69,7 @@ hr {
 #about {
   width: 50%;
 }
-.me {
+#me {
   margin-top: 10px;
 }
 #social {
@@ -72,19 +80,9 @@ hr {
   width: 90px;
   height: 75px;
 }
-.soc {
-  border: solid black;
-  height: 275px;
-  margin-left: 115px;
-  margin-top: 55px;
-  box-shadow: 5px 10px black;
-  overflow: auto;
-}
-/* .project-bts {
-  border: solid whitesmoke;
-} */
-#bottom:hover .overlay{
- opacity: 1;
+
+#bottom:hover .overlay {
+  opacity: 1;
 }
 h3 {
   text-align: center;
@@ -96,10 +94,6 @@ h3 {
   display: block;
   width: 400px;
 }
-/* #rows {
-  margin-top: 75px;
-} */
-
 .overlay {
   position: absolute;
   top: 30px;
@@ -109,13 +103,16 @@ h3 {
   height: 89%;
   width: 97%;
   opacity: 0;
-  transition: .2s ease;
+  transition: 0.2s ease;
   background-color: royalblue;
+}
+.btn {
+  display: none;
 }
 #bottom {
   margin-top: 20px;
   position: relative;
-  
+
   align-content: center;
   border: solid whitesmoke;
 }
@@ -131,10 +128,193 @@ a {
 #simpson {
   right: 10px;
 }
-@media screen and (max-width: 990px) {
-    #bottom{
-        margin-top: 0px;
-        position: static;
 
-    }
+@media screen and (max-width: 990px) {
+  body {
+    text-align: center;
+  }
+  #name {
+    width: 100%;
+  }
+  #me {
+    margin-top: 10px;
+    left: 140px;
+  }
+  #bg {
+    position: relative;
+    width: 100%;
+    margin-top: 55px;
+    left: 0px;
+    border: solid black;
+    height: 280px;
+    padding: 17px;
+    padding-top: 23px;
+    font-size: 10px;
+    background-color: gainsboro;
+    box-shadow: 5px 10px black;
+    overflow: auto;
+  }
+  #spot {
+    height: 545px;
+    padding: 10px;
+    width: 96%;
+    background-color: gainsboro;
+    background-size: 100%;
+    box-shadow: 5px 10px black;
+    border: solid black;
+  }
+  .soc {
+    border: solid black;
+    height: 275px;
+    margin-left: 0;
+    margin-right: 25px;
+    box-shadow: 5px 10px black;
+  }
+  #bottom {
+    position: relative;
+    margin-top: 0px;
+    left: 0px;
+  }
+  .overlay {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 20px;
+    right: 0px;
+    height: 89%;
+    width: 75%;
+    opacity: 1;
+    transition: 0.2s ease;
+    background-color: royalblue;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  body {
+    text-align: center;
+  }
+  #name {
+    width: 105%;
+  }
+  #spot {
+    height: 545px;
+    padding: 10px;
+    width: 690px;
+    background-color: gainsboro;
+    background-size: 100%;
+    box-shadow: 5px 10px black;
+    border: solid black;
+  }
+  .btn {
+    position: relative;
+    left: 285px;
+    display: block;
+    margin-top: 10px;
+  }
+  #bg {
+    position: relative;
+    width: 100%;
+    margin-top: 55px;
+    left: 0px;
+    border: solid black;
+    height: 280px;
+    padding: 17px;
+    padding-top: 23px;
+    font-size: 10px;
+    background-color: gainsboro;
+    box-shadow: 5px 10px black;
+    overflow: hidden;
+  }
+  .overlay {
+    display: none;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 6px;
+    right: 0px;
+    height: 89%;
+    width: 97%;
+    opacity: 1;
+    transition: 0.2s ease;
+    background-color: royalblue;
+  }
+}
+@media screen and (max-width: 411px) {
+  body {
+    width: 375px;
+  }
+  #text {
+    margin-top: -20px;
+    font-size: 17px;
+  }
+  #spot {
+    overflow: hidden;
+    height: 545px;
+    margin-top: 15px;
+    padding: 10px;
+    width: 510px;
+    background-color: gainsboro;
+    background-size: 100%;
+    box-shadow: 5px 10px black;
+    border: solid black;
+  }
+  #name {
+    height: 90px;
+    padding: 0% 0% 0% 0%;
+    width: 108%;
+    box-shadow: 5px 10px black;
+    background: royalblue;
+  }
+  #me {
+    margin-top: 0px;
+    margin-bottom: -10px;
+    left: 85px;
+  }
+  #bg {
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    font-size: 10px;
+    background-color: gainsboro;
+    overflow: hidden;
+  }
+  #pic {
+    width: 200px;
+    float: left;
+    padding: 15px;
+    margin-top: -8%;
+  }
+  .text {
+    margin-top: 0px;
+    font-size: 15px;
+  }
+  .soc {
+    margin-right: 0;
+  }
+  #bottom {
+    position: relative;
+    margin-top: 0px;
+    left: 0px;
+    padding-top: 10px;
+  }
+  .giph {
+    display: block;
+    width: 320px;
+  }
+  .btn {
+    left: 110px;
+  }
+  .overlay {
+    display: none;
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 6px;
+    right: 0px;
+    height: 89%;
+    width: 97%;
+    opacity: 1;
+    transition: 0.2s ease;
+    background-color: royalblue;
+  }
 }
